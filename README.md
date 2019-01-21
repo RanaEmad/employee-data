@@ -9,6 +9,11 @@ This repository also has an extra PHP script that connects to the database and r
 * PHP Script: <br>
 In case of running the PHP script clone this repository in your server folder, replace the database configuration in core/Config.php with the correct configuration and go to the corresponding URL in your browser then click the employee "John Doe" to view the sample data entered
 
+## Other Tasks
+You can find the other tasks in the below repositories
+* Task 1: https://github.com/RanaEmad/name
+* Task 2: https://github.com/RanaEmad/insurance-calculator
+
 ## Author
 
 * **Rana Emad**  - (https://github.com/RanaEmad)
