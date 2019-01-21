@@ -26,12 +26,7 @@ class Employee{
     public function getEmployee(){
         $id=$_GET["id"];
         $employee= $this->employeeModel->getEmployee($id);
-        if(!empty($employee)){
-            foreach ($employee as $key=>$value){
-                $employee->{$key}=  htmlspecialchars($value);
-            }
-        }
-        else{
+        if(empty($employee)){
             throw new \Exception("User Not Found");
         }
         return $employee;

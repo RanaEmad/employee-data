@@ -36,23 +36,6 @@
                     <td><strong>Address:</strong></td>
                     <td><?= $empData->address; ?></td>
                 </tr>
-<!--                <th>#</th>
-                    <th>Name</th>
-                    <th>Birth Date</th>
-                    <th>ID Code/SSN</th>
-                    <th>Current Employee</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>English - Introduction</th>
-                    <th>English - Work Experience</th>
-                    <th>English - Education Information</th>
-                    <th>Spanish - Introduction</th>
-                    <th>Spanish - Work Experience</th>
-                    <th>Spanish - Education Information</th>
-                    <th>French - Introduction</th>
-                    <th>French - Work Experience</th>
-                    <th>French - Education Information</th>-->
             </tbody>
         </table>
         <h1>Employee Info</h1>
@@ -72,15 +55,15 @@
                 <tbody>
                     <tr>
                         <td><strong>Introduction:</strong></td>
-                        <td><?= $empData->{$introduction}?$empData->{$introduction}:"" ?></td>
+                        <td><?= $empData->{$introduction}?  utf8_encode($empData->{$introduction}):"" ?></td>
                     </tr>
                     <tr>
                         <td><strong>Work Experience:</strong></td>
-                        <td><?= $empData->{$workExperience}?$empData->{$workExperience}:"" ?></td>
+                        <td><?= $empData->{$workExperience}?utf8_encode($empData->{$workExperience}):"" ?></td>
                     </tr>
                     <tr>
                         <td><strong>Education Information:</strong></td>
-                        <td><?= $empData->{$education}?$empData->{$education}:"" ?></td>
+                        <td><?= $empData->{$education}?utf8_encode($empData->{$education}):"" ?></td>
                     </tr>
                 </tbody>
             </table>
